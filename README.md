@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-Browser view: (Screenshots\Browser view.png)
-Mobile viwe: (Screenshots\Mobile view.png)
+Browser view: https://github.com/dzenitaa96/dzenitaa96.github.io/blob/8dc7c5fb40c74ba5e38626bdd8b4f42bd7b44ca7/Screenshots/Browser%20view.png
+Mobile view: https://github.com/dzenitaa96/dzenitaa96.github.io/blob/8dc7c5fb40c74ba5e38626bdd8b4f42bd7b44ca7/Screenshots/Mobile%20view.png
 
 ## My process
 
