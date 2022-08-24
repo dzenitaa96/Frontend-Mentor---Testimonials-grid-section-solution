@@ -1,0 +1,156 @@
+
+/* Box sizing rules */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Set body defaults */
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    background-color: hsl(210, 46%, 95%);
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Styling the article elements */
+.card {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    border-radius: 10px;
+}
+
+.first {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.card.quote {
+    background-image: url("images\bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+.second {
+    background-color: hsl(217, 19%, 35%);
+}
+.third {
+    background: hsl(0, 0%, 100%);
+}
+.fourth {
+    background: hsl(0, 0%, 100%);
+}
+.fifth {
+    background: hsl(219, 29%, 14%);
+}
+img {
+    border-radius: 50%;
+    border: 3px solid rgb(136, 98, 197);
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 200px;
+    max-height: 30px;
+    margin: 20px 0 10px 25px;
+}
+.user_info {
+    margin: 0 0 0 20px;
+    display: block;
+}
+.name {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    
+}
+.proffesion {
+    font-size: 13px;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 50%);
+    margin: 0;
+}
+.description {
+    font-size: 13px;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 50%);
+    margin: 5px 25px 25px 25px;
+}
+.heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 25px 5px 25px;
+}
+.name_wh {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(217, 19%, 35%);
+    margin: 0;
+    
+}
+.proffesion_wh {
+    font-size: 13px;
+    font-weight: 500;
+    color: hsla(217, 19%, 35%, 50%);
+    margin: 0;
+}
+.description_wh {
+    font-size: 13px;
+    font-weight: 500;
+    color: hsla(217, 19%, 35%, 50%);
+    margin: 5px 25px 25px 25px;
+}
+.heading_wh {
+    color: hsl(217, 19%, 35%);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 25px 5px 25px;
+}
+
+/* Setting up the grid */
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.testimonials {
+    margin:auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto; 
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+}
+
+@media (max-width: 52em) {
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+    .grid-col-span-2 {
+        grid-column: auto;
+    }
+    .grid-row-span-2 {
+        grid-row: auto;
+    }
+}
